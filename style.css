@@ -1,352 +1,356 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-body{
-    height: 100vh;
-    
+body {
+  height: 100vh;
 }
-.blue-bg{
-    height: 100vh;
-    width: 100vh;
-    position: absolute;
-    top: -2px;
-    right: -1px;
-    background-image: url(assets/blue-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    z-index: -12;
-    animation: backgrounds 1.5s ease forwards;
-}
-
-.navBar{
-    height: 8vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5vw;
-    animation: top 1.5s ease forwards;
+.blue-bg {
+  height: 100vh;
+  width: 100vh;
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  background-image: url(assets/blue-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  z-index: -12;
+  animation: backgrounds 1.5s ease forwards;
 }
 
-.bar{
-    color: white;
-    display: none;
+.navBar {
+  height: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  animation: top 1.5s ease forwards;
 }
-h2{
-    letter-spacing: 0.2vw;
-    font-weight: 400;
+
+.bar {
+  color: white;
+  display: none;
 }
-span{
-    color: orange;
-    font-weight: 900;
-    /* font-size: 1.4rem; */
+h2 {
+  letter-spacing: 0.2vw;
+  font-weight: 400;
 }
-ul{
-    display: flex;
+span {
+  color: orange;
+  font-weight: 900;
+  /* font-size: 1.4rem; */
 }
-li a{
-    padding: 0 2.5rem;
-    list-style: none;
-    text-decoration: none; 
-    font-size: 1.4rem;
-    color: white;
+ul {
+  display: flex;
+}
+li a {
+  padding: 0 2.5rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
 }
 
 .images {
   height: 100vh;
   width: 100vh;
- }
- .images #flower{
-    position: absolute;
-    bottom: -4px;
-    right: 0;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: -1;
-    animation: flowerAnimation 2.5s ease forwards;
+}
+.images #flower {
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: -1;
+  animation: flowerAnimation 2.5s ease forwards;
 }
 
-.images #leaf-1{
-    max-height: 50%;
-    position: absolute;
-    right: 250px;
-    bottom: -60px;
-    animation: flowerAnimation 3s ease forwards;
+.images #leaf-1 {
+  max-height: 50%;
+  position: absolute;
+  right: 250px;
+  bottom: -60px;
+  animation: flowerAnimation 3s ease forwards;
 }
 
-.images #leaf-2{
-    max-height: 50%;
-    position: absolute;
-    right: 210px;
-    bottom: -10px;
-    animation: flowerAnimation 3s ease forwards;
+.images #leaf-2 {
+  max-height: 50%;
+  position: absolute;
+  right: 210px;
+  bottom: -10px;
+  animation: flowerAnimation 3s ease forwards;
 }
 
-.images #leaf-3{
-    max-height: 50%;
-    position: absolute;
-    right: 0px;
-    bottom: -60px;
-    animation: flowerAnimation 3s ease forwards;
+.images #leaf-3 {
+  max-height: 50%;
+  position: absolute;
+  right: 0px;
+  bottom: -60px;
+  animation: flowerAnimation 3s ease forwards;
 }
 
-.images #leaf-4{
-    max-height: 30%;
-    position: absolute;
-    left: 10px;
-    bottom: -80px;
-    transform: rotate(10deg);
-    animation: flowerAnimation 2.5s ease forwards;
+.images #leaf-4 {
+  max-height: 30%;
+  position: absolute;
+  left: 10px;
+  bottom: -80px;
+  transform: rotate(10deg);
+  animation: flowerAnimation 2.5s ease forwards;
 }
-.images #leaf-5{
-    max-height: 35%;
-    position: absolute;
-    left: -5px;
-    bottom: -50px;
-    animation: flowerAnimation 2.5s ease forwards;
-}
-
-
-.content{
-    height: 45vh;
-    width: 30vw;
-    position: absolute;
-    /* z-index: 10000; */
-    top: 150px;
-    left: 60px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    animation: slide 2.5s ease forwards;
+.images #leaf-5 {
+  max-height: 35%;
+  position: absolute;
+  left: -5px;
+  bottom: -50px;
+  animation: flowerAnimation 2.5s ease forwards;
 }
 
-h1{
-    font-size: 3rem;
+.content {
+  height: 45vh;
+  width: 30vw;
+  position: absolute;
+  /* z-index: 10000; */
+  top: 150px;
+  left: 60px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  animation: slide 2.5s ease forwards;
 }
 
-button{
-    width: 10rem;
-    border-radius: 50px;
-    border: none;
-    padding: 0.5rem;
-    background: linear-gradient(to right, rgba(255, 255, 0, 0.74), rgba(241, 55, 86, 0.767));
-    color: white;
-    font-size: 1.2vw;
-    font-weight: 600;
-    cursor: pointer;
+h1 {
+  font-size: 3rem;
+}
+
+button {
+  width: 10rem;
+  border-radius: 50px;
+  border: none;
+  padding: 0.5rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 0, 0.74),
+    rgba(241, 55, 86, 0.767)
+  );
+  color: white;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 @keyframes flowerAnimation {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(100%);
   }
+  100% {
+    transform: translateY(0);
+  }
+}
 
-  @keyframes top {
-    0% {
-      transform: translateY(-100%);
-    }
-    100% {
-      transform: translateY(0);
-    }
+@keyframes top {
+  0% {
+    transform: translateY(-100%);
   }
-  
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes backgrounds {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 @keyframes slide {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    body .blue-bg {
-        right: -140px;
-    }
-    li a {
-        padding: 1.5rem;
-    }
+  body .blue-bg {
+    right: -140px;
+  }
+  li a {
+    padding: 1.5rem;
+  }
 
-    .images #flower {
-        max-width: 90%;
-    }
+  .images #flower {
+    max-width: 90%;
+  }
 
-    .images #leaf-1 {
-        max-height: 40%;
-    }
+  .images #leaf-1 {
+    max-height: 40%;
+  }
 
-    .images #leaf-2 {
-        max-height: 40%;
-        right: 190px;
-    }
+  .images #leaf-2 {
+    max-height: 40%;
+    right: 190px;
+  }
 
-    .images #leaf-3 {
-        max-height: 40%;
-    }
+  .images #leaf-3 {
+    max-height: 40%;
+  }
 }
-@media screen and (max-width: 800px){
-    body .blue-bg {
-        right: -200px;
-    }
-    .content{
-        width: 40vw;
-        left: 25px;
-    }
-    .content h1{
-       font-size: 2.5rem;
-    }
-    .content button{
-        font-size: 1rem;
-        margin-top: 0.5rem;
-     }
-     .navBar {
-        padding: 3rem 2rem 0 2rem;
-        height: 5rem;
-     }
-     .navBar li a{
-        padding:  2rem;
-        font-size: 1.15rem;
-     }
+@media screen and (max-width: 800px) {
+  body .blue-bg {
+    right: -200px;
+  }
+  .content {
+    width: 40vw;
+    left: 25px;
+  }
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .content button {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .navBar {
+    padding: 3rem 2rem 0 2rem;
+    height: 5rem;
+  }
+  .navBar li a {
+    padding: 2rem;
+    font-size: 1.15rem;
+  }
 }
 @media screen and (max-width: 768px) {
-    body .blue-bg {
-        right: -250px;
-    }
+  body .blue-bg {
+    right: -250px;
+  }
 
-    .images #flower {
-        max-width: 90%;
-    }
+  .images #flower {
+    max-width: 90%;
+  }
 
-    .images #leaf-1 {
-        max-height: 30%;
-        right: 180px;
-    }
+  .images #leaf-1 {
+    max-height: 30%;
+    right: 180px;
+  }
 
-    .images #leaf-2 {
-        max-height: 30%;
-        right: 150px;
-        bottom: -30px;
-    }
+  .images #leaf-2 {
+    max-height: 30%;
+    right: 150px;
+    bottom: -30px;
+  }
 
-    .images #leaf-3 {
-        max-height: 30%;
-        right: 30px;
-    }
+  .images #leaf-3 {
+    max-height: 30%;
+    right: 30px;
+  }
 
-    .images #leaf-4 {
-        max-height: 25%;
-    }
+  .images #leaf-4 {
+    max-height: 25%;
+  }
 
-    .images #leaf-5 {
-        max-height: 25%;
-    }
+  .images #leaf-5 {
+    max-height: 25%;
+  }
 
-    .navBar li a {
-        display: none;
-    }
-    .navBar .bar{
-        color: white;
-        font-size: 2rem;
-        display: block;
-        cursor: pointer;
-    }
+  .navBar li a {
+    display: none;
+  }
+  .navBar .bar {
+    color: white;
+    font-size: 2rem;
+    display: block;
+    cursor: pointer;
+  }
 
-    .content{
-        left: 150px;
-    }
-    .content button {
-        font-size: 2vw;
-    }
+  .content {
+    left: 150px;
+  }
+  .content button {
+    font-size: 2vw;
+  }
 
-    .content h1 {
-        font-size: 5vw;
-    }
-    .navBar{
-        padding: 0 3rem;
-    }
+  .content h1 {
+    font-size: 5vw;
+  }
+  .navBar {
+    padding: 0 3rem;
+  }
 
-    .content{
-        top: 150px;
-        left: 20px;
-    }
-    
+  .content {
+    top: 150px;
+    left: 20px;
+  }
 }
-@media screen and (max-width: 748px){
-    body .blue-bg{
-        display: none;
-    }
-    .navBar .bar{
-        color: orange;
-    }
+@media screen and (max-width: 748px) {
+  body .blue-bg {
+    display: none;
+  }
+  .navBar .bar {
+    color: orange;
+  }
 
-    .content{
-        top: 100px;
-        width: 90vw;
-        padding: 0 5rem;
-        left: 0;
-    }
-    .content h1{
-        font-size: 7vw;
-    }
-    .content button{
-        font-size: 2.5vw;
-    }
+  .content {
+    top: 100px;
+    width: 90vw;
+    padding: 0 5rem;
+    left: 0;
+  }
+  .content h1 {
+    font-size: 7vw;
+  }
+  .content button {
+    font-size: 2.5vw;
+  }
 }
-@media screen and (max-width: 645px){
-    .content{
-        top: 120px;
-        left: 0;
-        padding-left: 50px;
-    }
-    .content h1{
-        font-size: 7vw;
-    }
-    .images #leaf-1 {
-        max-height: 20%;
-        right: 150px;
-    }
+@media screen and (max-width: 645px) {
+  .content {
+    top: 120px;
+    left: 0;
+    padding-left: 50px;
+  }
+  .content h1 {
+    font-size: 7vw;
+  }
+  .content button {
+    font-size: 1.4rem;
+  }
+  .images #leaf-1 {
+    max-height: 20%;
+    right: 150px;
+  }
 
-    .images #leaf-2 {
-        max-height: 20%;
-        right: 130px;
-        bottom: -30px;
-    }
+  .images #leaf-2 {
+    max-height: 20%;
+    right: 130px;
+    bottom: -30px;
+  }
 
-    .images #leaf-3 {
-        max-height: 20%;
-        right: 30px;
-    }
+  .images #leaf-3 {
+    max-height: 20%;
+    right: 30px;
+  }
 }
-@media screen and (max-width: 425px){
-    .content{
-        height: 45vh;
-        left: 35px;
-        top: 150px;
-    }
-    .content h1{
-        font-size: 12vw;
-    }
-    .content p{
-        font-size: 5vw;
-    }
-    .content button{
-        font-size: 6vw;
-    }
+@media screen and (max-width: 425px) {
+  .content {
+    height: 45vh;
+    left: 35px;
+    top: 150px;
+  }
+  .content h1 {
+    font-size: 10vw;
+  }
+  .content p {
+    font-size: 4vw;
+  }
+  .content button {
+    font-size: 6vw;
+  }
 }
